@@ -24,3 +24,13 @@ react-native run-android --variant=arDebug
 ## Scene setup
 
 -   The AR scene has to have as root the **ARSceneNavigator** tag and get the API key as prop. It should also receive the scene to be run as a prop.
+
+```jsx
+var sharedProps = {
+    apiKey: 'MY_API_KEY'
+};
+
+[...]
+
+<ViroARSceneNavigator {...this.state.sharedProps} initialScene={{ scene: InitialARScene }} />
+```
